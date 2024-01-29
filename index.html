@@ -46,13 +46,6 @@
             margin-top: 20px;
             color: #333;
         }
-        footer {
-            padding: 20px;
-            background: #333;
-            color: #ffffff;
-            text-align: left; /* Align text to the left */
-            font-size: 0.8em; /* Smaller font size */
-        }
         @media(max-width: 700px) {
             .profile-section {
                 flex-direction: column;
@@ -64,7 +57,6 @@
             }
         }
     </style>
-
         footer {
             background: #333;
             color: #ffffff;
@@ -76,20 +68,30 @@
         }
         footer p {
             margin: 0; /* Removes default margin */
+            font-size: 0.8em; /* Smaller font size for the name */
         }
-        footer nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0; /* Aligns with the name */
+        footer nav {
             display: flex;
         }
-        footer nav li {
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        footer li {
             margin: 0 10px;
         }
         footer a {
             color: #ffffff;
             text-decoration: none;
         }
+        .profile-photo {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+        }
+        /* Additional styles as needed */
     </style>
 </head>
 <body>

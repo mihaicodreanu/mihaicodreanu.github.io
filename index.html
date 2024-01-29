@@ -19,13 +19,16 @@
             overflow: hidden;
             padding: 0 20px;
         }
+<header>
+    <!-- Header with only background image -->
+    <style>
         header {
             background: url('MainQuadChurch.jpg') no-repeat center center;
             background-size: cover;
-            color: #000; /* Black text color */
-            padding: 20px 0;
-            text-align: center;
+            height: 150px; /* Adjust height as needed */
         }
+    </style>
+</header>
         header a {
             color: #000; /* Black text color */
             text-decoration: none;
@@ -90,18 +93,6 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <div id="branding">
-                <h1>Mihai Codreanu</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/mihai-alexandru-codreanu">LinkedIn</a></li>
-                    <li><a href="https://scholar.google.com/citations?user=mIkULX8AAAAJ&hl=en">Google Scholar</a></li>
-                    <li><a href="https://profiles.stanford.edu/mihai-codreanu">Stanford Profile</a></li>
-                </ul>
-            </nav>
-        </div>
     </header>
 
     <div class="container">
@@ -183,10 +174,41 @@
     </section>
 </div>
 
+<footer>
+    <style>
+        footer {
+            background: #333;
+            color: #ffffff;
+            text-align: left; /* Align text to the left */
+            padding: 10px; /* Smaller padding */
+            font-size: 0.8em; /* Smaller font size */
+        }
+        footer nav {
+            text-align: center; /* Centering the navigation links */
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+            display: inline-block; /* Inline block for navigation */
+        }
+        footer li {
+            display: inline;
+            margin: 0 10px;
+        }
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
 
-
-    <footer>
-        <p>Mihai Codreanu © 2024</p>
-    </footer>
+    <p>Mihai Codreanu © 2024</p>
+    <nav>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/mihai-alexandru-codreanu">LinkedIn</a></li>
+            <li><a href="https://scholar.google.com/citations?user=mIkULX8AAAAJ&hl=en">Google Scholar</a></li>
+            <li><a href="https://profiles.stanford.edu/mihai-codreanu">Stanford Profile</a></li>
+        </ul>
+    </nav>
+</footer>
 </body>
 </html>

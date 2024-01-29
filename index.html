@@ -19,18 +19,29 @@
             overflow: hidden;
             padding: 20px;
         }
-    header {
+        header {
             background: url('MainQuadChurch.jpg') no-repeat center center;
             background-size: cover;
+            position: relative;
             height: 150px;
             display: flex;
             align-items: center;
-            padding-left: 0px; /* Space for the name */
+            justify-content: center;
+        }
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
         }
         .header-name {
-            color: #fff; /* Adjust text color if needed */
-            font-size: 2.5em;
+            position: relative;
+            color: #fff; /* White text for contrast */
+            font-size: 1.5em;
             font-weight: bold;
+            z-index: 1; /* Ensures text appears above the overlay */
         }
         .profile-section {
             display: flex;

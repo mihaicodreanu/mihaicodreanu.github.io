@@ -17,12 +17,12 @@
             max-width: 1100px;
             margin: auto;
             overflow: hidden;
-            padding: 0 20px;
+            padding: 20px;
         }
         header {
             background: url('MainQuadChurch.jpg') no-repeat center center;
             background-size: cover;
-            height: 150px; /* Adjust height as needed */
+            height: 150px;
         }
         .profile-section {
             display: flex;
@@ -35,16 +35,32 @@
             height: auto;
             margin-right: 20px;
         }
-        .profile-text {
-            flex: 1;
-        }
         .profile-text h2 {
             margin-top: 0;
             color: #333;
         }
-        #contact h3 {
-            margin-top: 20px;
-            color: #333;
+        footer {
+            background: #333;
+            color: #ffffff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8em;
+        }
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            margin: 0;
+        }
+        footer li {
+            margin: 0 10px;
         }
         @media(max-width: 700px) {
             .profile-section {
@@ -52,58 +68,11 @@
                 align-items: center;
                 text-align: center;
             }
-            .profile-photo {
-                margin-bottom: 15px;
-            }
         }
-    </style>
-        footer {
-            background: #333;
-            color: #ffffff;
-            padding: 10px;
-            font-size: 0.8em;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        footer p {
-            margin: 0; /* Removes default margin */
-            font-size: 0.8em; /* Smaller font size for the name */
-        }
-        footer nav {
-            display: flex;
-        }
-        footer ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-        }
-        footer li {
-            margin: 0 10px;
-        }
-        footer a {
-            color: #ffffff;
-            text-decoration: none;
-        }
-        .profile-photo {
-            width: 150px;
-            height: auto;
-            border-radius: 50%;
-        }
-        /* Additional styles as needed */
     </style>
 </head>
 <body>
-    <header>
-        <style>
-            header {
-                background: url('MainQuadChurch.jpg') no-repeat center center;
-                background-size: cover;
-                height: 150px;
-            }
-        </style>
-    </header>
+    <header></header>
 
     <div class="container">
         <section class="profile-section">
@@ -115,12 +84,6 @@
             </div>
         </section>
 
-        <section id="contact">
-            <h3>Contact & CV</h3>
-            <p>You can email me anytime at: <a href="mailto:mihaic@stanford.edu">mihaic@stanford.edu</a>.</p>
-            <p>You can find my CV <a href="https://drive.google.com/file/d/1xeIn83BYotpsXi8TlnKFsw8dnXuzhD8c/view" target="_blank">here</a>.</p>
-        </section>
-    </div>
 
 <div class="container">
     <section id="research">
@@ -143,6 +106,8 @@
                 "Directed Technical Change. Evidence from WFH Technologies" (joint with N. Bloom, S. Davis, Y. Zhestkova). Media: <a href="https://www.newthingsunderthesun.com/pub/2whuphs2/release/3">New Things Under the Sun</a>, <a href="https://time.com/6243148/working-from-home-is-the-trend-of-the-year-and-next-year-too/">Time Magazine</a>.
             </li>
         </ul>
+            </section>
+</div>
 
         <div class="container">
     <section id="policy-oriented-work">
@@ -184,7 +149,8 @@
     </section>
 </div>
 
-   <footer>
+    <footer>
+        <p>Mihai Codreanu © 2024</p>
         <nav>
             <ul>
                 <li><a href="https://www.linkedin.com/in/mihai-alexandru-codreanu">LinkedIn</a></li>
@@ -192,8 +158,6 @@
                 <li><a href="https://profiles.stanford.edu/mihai-codreanu">Stanford Profile</a></li>
             </ul>
         </nav>
-     <p>Mihai Codreanu © 2024</p>
     </footer>
-</footer>
 </body>
 </html>

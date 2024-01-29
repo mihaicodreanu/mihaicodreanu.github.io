@@ -22,14 +22,12 @@
         header {
             background: #333;
             color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #bbb 1px solid;
+            padding: 20px 0;
+            text-align: center;
         }
         header a {
             color: #fff;
             text-decoration: none;
-            text-transform: uppercase;
             font-size: 16px;
         }
         header ul {
@@ -37,69 +35,29 @@
             margin: 0;
             list-style: none;
             overflow: hidden;
+            display: inline-block;
         }
         header li {
-            float: left;
             display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
+            padding: 0 10px;
         }
         header #branding h1 {
             margin: 0;
+            font-size: 24px;
         }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        header .highlight, header .current a {
-            color: #e8491d;
-            font-weight: bold;
-        }
-        header a:hover {
-            color: #ffffff;
-            font-weight: bold;
-        }
-        #showcase {
-            min-height: 400px;
-            background: url('background-img-url') no-repeat 0 -100px;
-            text-align: center;
-            color: #ffffff;
-        }
-        #showcase h1 {
-            margin-top: 100px;
-            font-size: 55px;
-            margin-bottom: 10px;
-        }
-        #showcase p {
-            font-size: 20px;
-        }
-        .button {
-            display: inline-block;
-            color: #333;
-            background: #f4f4f4;
-            padding: 10px 20px;
-            font-size: 18px;
-            text-decoration: none;
-            margin-top: 20px;
-        }
-        .button:hover {
-            background: #e8491d;
-            color: #ffffff;
-        }
-        #main {
-            padding: 30px 0;
-            background: #ffffff;
-            color: #333;
-        }
-        #main h2 {
-            color: #333;
-        }
-        #main img {
-            width: 200px;
-            height: auto;
+        .profile-photo {
+            float: left;
+            margin-right: 20px;
             border-radius: 50%;
+            width: 150px;
+            height: auto;
+        }
+        #main p {
+            margin: 10px 0;
+        }
+        #contact h3 {
+            margin-top: 20px;
+            color: #333;
         }
         footer {
             padding: 20px;
@@ -109,61 +67,43 @@
             text-align: center;
         }
         @media(max-width: 700px) {
-            header #branding, header nav, header header-ads {
+            .profile-photo {
                 float: none;
-                text-align: center;
-                width: 100%;
-            }
-            header nav ul {
-                padding: 0;
-                background-color: #333;
-            }
-            header nav ul li {
                 display: block;
-                padding: 10px;
+                margin: 0 auto;
             }
         }
     </style>
 </head>
 <body>
     <header>
-    <div class="container">
-        <div id="branding">
-            <h1>Mihai Codreanu</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/mihai-alexandru-codreanu"><img src="linkedin.png" alt="LinkedIn" style="width: 30px; height: auto;"></a></li>
-                <li><a href="https://scholar.google.com/citations?user=mIkULX8AAAAJ&hl=en"><img src="google_scholar.png" alt="Google Scholar" style="width: 30px; height: auto;"></a></li>
-                <li><a href="https://profiles.stanford.edu/mihai-codreanu"><img src="stanford.png" alt="Stanford Profile" style="width: 30px; height: auto;"></a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-
-    <div id="showcase">
         <div class="container">
-            <h1>Welcome</h1>
+            <div id="branding">
+                <h1>Mihai Codreanu</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/mihai-alexandru-codreanu"><img src="linkedin.png" alt="LinkedIn" style="width: 30px; height: auto;"></a></li>
+                    <li><a href="https://scholar.google.com/citations?user=mIkULX8AAAAJ&hl=en"><img src="google_scholar.png" alt="Google Scholar" style="width: 30px; height: auto;"></a></li>
+                    <li><a href="https://profiles.stanford.edu/mihai-codreanu"><img src="stanford.png" alt="Stanford Profile" style="width: 30px; height: auto;"></a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
+
+    <div class="container">
+        <section id="academic">
+            <img src="RH204100.jpg" alt="Mihai Codreanu" class="profile-photo">
+            <p>I am a third-year PhD Candidate in the Stanford Department of Economics. My primary research interests are in innovation, entrepreneurship, and firm dynamics. I've completed courses in Labor and Public Economics, IO, and Corporate Finance.</p>
+            <p>When I'm not debugging code, you can find me trying to avoid bad losses at <a href="https://stanfordclubsports.com/sports/badminton/roster" target="_blank">Stanford Badminton</a>. I also love watching (& playing) tennis, and I try to visit as many US states and National Parks [while I can still hike and stay up late].</p>
+        </section>
+
+        <section id="contact">
+            <h3>Contact & CV</h3>
+            <p>You can email me anytime at: <a href="mailto:mihaic@stanford.edu">mihaic@stanford.edu</a>.</p>
+            <p>You can find my CV <a href="https://drive.google.com/file/d/1xeIn83BYotpsXi8TlnKFsw8dnXuzhD8c/view" target="_blank">here</a>.</p>
+        </section>
     </div>
-    
-<div class="container">
-    <section id="academic">
-        <img src="RH204100.jpg" alt="Mihai Codreanu" style="border-radius: 50%; width: 150px; height: auto; display: block; margin: 0 auto;">
-        <h2>About Me</h2>
-        <p>I am a third-year PhD Candidate in the Stanford Department of Economics. My primary research interests are in innovation, entrepreneurship, and firm dynamics. I've completed courses in Labor and Public Economics, IO, and Corporate Finance.</p>
-        <p>When I'm not debugging code, you can find me trying to avoid bad losses at <a href="https://stanfordclubsports.com/sports/badminton/roster" target="_blank">Stanford Badminton</a>. I also love watching (& playing) tennis, and I try to visit as many US states and National Parks [while I can still hike and stay up late].</p>
-    </section>
-
-    <section id="contact">
-        <h3>Contact & CV</h3>
-        <p>You can email me anytime at: <a href="mailto:mihaic@stanford.edu">mihaic@stanford.edu</a>.</p>
-        <p>You can find my CV <a href="https://drive.google.com/file/d/1xeIn83BYotpsXi8TlnKFsw8dnXuzhD8c/view" target="_blank">here</a>.</p>
-    </section>
-</div>
-
-
 
 <div class="container">
     <section id="research">

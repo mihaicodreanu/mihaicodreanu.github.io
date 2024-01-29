@@ -22,7 +22,7 @@
         header {
             background: #333;
             color: #fff;
-            padding: 20px 0;
+            padding: 15px 0;
             text-align: center;
         }
         header a {
@@ -43,17 +43,25 @@
         }
         header #branding h1 {
             margin: 0;
-            font-size: 24px;
+            font-size: 28px;
+        }
+        .profile-section {
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
         }
         .profile-photo {
-            float: left;
-            margin-right: 20px;
             border-radius: 50%;
             width: 150px;
             height: auto;
+            margin-right: 20px;
         }
-        #main p {
-            margin: 10px 0;
+        .profile-text {
+            flex: 1;
+        }
+        .profile-text h2 {
+            margin-top: 0;
+            color: #333;
         }
         #contact h3 {
             margin-top: 20px;
@@ -67,10 +75,13 @@
             text-align: center;
         }
         @media(max-width: 700px) {
+            .profile-section {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
             .profile-photo {
-                float: none;
-                display: block;
-                margin: 0 auto;
+                margin-bottom: 15px;
             }
         }
     </style>
@@ -92,10 +103,13 @@
     </header>
 
     <div class="container">
-        <section id="academic">
+        <section class="profile-section">
             <img src="RH204100.jpg" alt="Mihai Codreanu" class="profile-photo">
-            <p>I am a third-year PhD Candidate in the Stanford Department of Economics. My primary research interests are in innovation, entrepreneurship, and firm dynamics. I've completed courses in Labor and Public Economics, IO, and Corporate Finance.</p>
-            <p>When I'm not debugging code, you can find me trying to avoid bad losses at <a href="https://stanfordclubsports.com/sports/badminton/roster" target="_blank">Stanford Badminton</a>. I also love watching (& playing) tennis, and I try to visit as many US states and National Parks [while I can still hike and stay up late].</p>
+            <div class="profile-text">
+                <h2>About Me</h2>
+                <p>I am a third-year PhD Candidate in the Stanford Department of Economics. My primary research interests are in innovation, entrepreneurship, and firm dynamics. I've completed courses in Labor and Public Economics, IO, and Corporate Finance.</p>
+                <p>When I'm not debugging code, you can find me trying to avoid bad losses at <a href="https://stanfordclubsports.com/sports/badminton/roster" target="_blank">Stanford Badminton</a>. I also love watching (& playing) tennis, and I try to visit as many US states and National Parks as possible.</p>
+            </div>
         </section>
 
         <section id="contact">
@@ -108,6 +122,7 @@
 <div class="container">
     <section id="research">
         <h2>Research</h2>
+        
     <section id="academic-oriented-work">
         <h3>Working Papers</h3>
         <ul>
